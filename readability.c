@@ -7,15 +7,15 @@
 #include <cs50.h>
 #include <string.h>
 
-int letters;
+int letters; // This variable is declared outside of the function that is using it.
 
 int main (void){
     string sentance = get_string("Enter your statement: ");
 
-    for (i = 0; i < len(sentance); i ++){
+    for (i = 0; i < len(sentance); i ++){ // Use strlen() from the string.h library to get the length of the string.
         letters += 1;
     }
-    printf(letters, %d);
+    printf(letters, %d); // The printf function has incorrect syntax. It should be printf("%d\n", letters);.
 
-    print("California");
+    print("California"); // There is a typo in print("California"); which should be printf("California\n");.
 }
