@@ -8,7 +8,7 @@ int main(void) {
     int letters = 0;
 
     // Get input string from the user
-    string sentence = get_string("Enter your statement: ");
+    char sentence[] = get_string("Enter your statement: ");
 
     // Loop through the string to count letters
     for (int i = 0; i < strlen(sentence); i++) {

@@ -4,13 +4,12 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include <cs50.h>
 #include <string.h>
 
 int letters; // This variable is declared outside of the function that is using it.
 
 int main (void){
-    string sentance = get_string("Enter your statement: ");
+    string sentance = get_string("Enter your statement: "); // I don't think declaring string like his is kosher with C. 
 
     for (i = 0; i < len(sentance); i ++){ // Use strlen() from the string.h library to get the length of the string.
         letters += 1;
